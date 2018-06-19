@@ -1,6 +1,6 @@
-package com.cl.common.dto;
+package com.cl.config.common.dto;
 
-import com.cl.common.enums.EnumResult;
+import com.cl.config.common.enums.EnumResult;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -15,11 +15,8 @@ import lombok.ToString;
 public final class CommonResponseDto<T> {
 
     private int code;
-
     private String msg;
-
     private T data;
-
 
     public CommonResponseDto(int code, String msg, T data) {
         this.code = code;
@@ -43,4 +40,7 @@ public final class CommonResponseDto<T> {
         return new CommonResponseDto<T>(code, msg, null);
     }
 
+    public boolean isSuccess() {
+        return code == EnumResult.SUCCESS.getCode();
+    }
 }

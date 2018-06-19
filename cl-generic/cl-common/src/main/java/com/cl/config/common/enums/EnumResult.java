@@ -1,4 +1,4 @@
-package com.cl.common.enums;
+package com.cl.config.common.enums;
 
 /**
  * @author:chenglong

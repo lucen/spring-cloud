@@ -5,8 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cl</groupId>
-    <artifactId>cl-config</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>cl-common-service</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>cl-config-server</module>
+        <module>cl-eureka-server</module>
+        <module>cl-zuul-server</module>
+    </modules>
+    <packaging>pom</packaging>
+    <description>通用服务</description>
 
-    
 </project>
